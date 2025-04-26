@@ -175,7 +175,7 @@ Add Jenkins Credentials:
 Get Minikube Service URL:
 
 ```bash
-minikube service flask-service --url
+minikube service flask-love-app-service --url
 ```
 
 Example URL:
