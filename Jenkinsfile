@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Soumil2002/your-repo-name.git'
+                git branch: 'main', url: 'https://github.com/Soumil2002/flask-cicd-jenkins-k8s.git'
             }
         }
 
