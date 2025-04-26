@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: your-dockerhub-username/flask-cicd
+  repository: soumil22/flask-cicd
   tag: latest
   pullPolicy: Always
 
