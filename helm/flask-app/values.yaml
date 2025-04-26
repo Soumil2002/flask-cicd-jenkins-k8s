@@ -1,12 +1,14 @@
 replicaCount: 1
 
 image:
-  repository: soumil22/flask-cicd
-  tag: latest
+  repository: soumil22/flask-love-app
   pullPolicy: Always
+  tag: latest
 
 service:
-  type: NodePort
-  port: 5000
+  name: flask-love-app
+  type: LoadBalancer  # Use LoadBalancer for Minikube or NodePort for non-LoadBalancer setups
+  port: 80
+  targetPort: 5000
 
 resources: {}
