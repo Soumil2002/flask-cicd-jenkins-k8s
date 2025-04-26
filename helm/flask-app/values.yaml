@@ -7,8 +7,9 @@ image:
 
 service:
   name: flask-love-app
-  type: LoadBalancer  # Use LoadBalancer for Minikube or NodePort for non-LoadBalancer setups
+  type: NodePort  # Change to NodePort for easier access
   port: 80
   targetPort: 5000
+  nodePort: 30000  # Expose on a specific port, adjust this as needed
 
 resources: {}
