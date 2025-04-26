@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "your-dockerhub-username/flask-cicd"
+        DOCKER_IMAGE = "soumil22/flask-cicd"
     }
 
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/your-username/flask-cicd-jenkins-k8s.git'
+                git 'https://github.com/Soumil2002/flask-cicd-jenkins-k8s.git'
             }
         }
 
